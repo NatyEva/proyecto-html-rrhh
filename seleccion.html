@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagenes/globo.ico" type="image/x-icon">
+    <title>Mi primera pagina de Recursos Humanos</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #768de9;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+        table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1.2rem; /* Tamaño de letra */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    background-color: #FFF;
+    width: 100%; /* Ajustar al ancho completo */
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 15px 25px; /* Tamaño de los márgenes */
+    font-size: 1rem; /* Tamaño de letra más pequeño que el encabezado */
+    font-family: 'Verdana', sans-serif; /* Tipo de letra para celdas */
+    text-align: center; /* Centrar texto en las celdas */
+}
+
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 15px 25px;
+    background-color: rgb(100, 100, 100); /* Color más oscuro para destacar */
+    color: #FFF; /* Texto blanco para contraste */
+    font-size: 1.3rem; /* Tamaño de letra ligeramente mayor */
+    font-family: 'Georgia', serif; /* Tipo de letra elegante para encabezados */
+    text-align: center;
+}
+
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>
+        Recursos Humanos
+    </h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="misionVisionValores.html">Mision, Vision y Valores</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a href="descripcion.html">Descripcion del puesto</a></li>
+                <li><a class="active" href="seleccion.html">Seleccion de personal</a></li>
+                <li><a href="evaluacion.html">Evaluacion de desempeño</a></li>
+                <li><a href="capacitacion.html">Planes de capacitacion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h2 style="margin: 15px;">Proceso de seleccion del personal:</h2>
+    <hr>
+    <article class="container">
+        <img class="image" src="assets/imagenes/seleccion.png" alt="selecciionDePersonal">
+        <p>El proceso de selección de personal es un conjunto estructurado de etapas y actividades que una organización
+            lleva a cabo para identificar, evaluar y elegir al candidato más adecuado para ocupar un puesto de trabajo
+            específico. Este proceso tiene como objetivo garantizar que la persona seleccionada posea las competencias,
+            habilidades, experiencia y valores necesarios para contribuir al logro de los objetivos de la empresa,
+            mientras se ajusta a los requisitos del puesto y a la cultura organizacional.</p>
+    </article>
+    
+    <br>
+    <table>
+        <colgroup>
+            <col style="background-color: rgb(138, 133, 133);">
+            <col>
+        </colgroup>
+        <tr>
+            <th>Etapa</th>
+            <th>Descripción</th>
+        </tr>
+
+        <tr>
+            <td>Analisis del puesto</td>
+            <td>Identificación de las competencias, responsabilidades y requisitos necesarios para el puesto.</td>
+        </tr>
+
+        <tr>
+            <td>Reclutamiento</td>
+            <td>Atracción de candidatos mediante fuentes internas (promociones) o externas (anuncios, agencias).</td>
+        </tr>
+
+        <tr>
+            <td>Preselección</td>
+            <td>Revisión de currículums y cartas de presentación para seleccionar a los candidatos más aptos.</td>
+        </tr>
+
+        <tr>
+            <td>Entrevista Inicial</td>
+            <td>Primera reunión con los candidatos para evaluar habilidades generales y motivaciones.</td>
+        </tr>
+
+        <tr>
+            <td>Pruebas Psicométricas o Técnicas</td>
+            <td>Evaluación de aptitudes, habilidades específicas y personalidad para el puesto</td>
+        </tr>
+
+        <tr>
+            <td>Entrevista en Profundidad</td>
+            <td>Reunión más detallada con preguntas enfocadas en la experiencia laboral y competencias clave.</td>
+        </tr>
+
+        <tr>
+            <td>Verificación de Referencias</td>
+            <td>Contacto con antiguos empleadores o referencias para confirmar la información proporcionada.</td>
+        </tr>
+
+        <tr>
+            <td> Oferta Laboral</td>
+            <td>Presentación de las condiciones del contrato al candidato seleccionado.</td>
+        </tr>
+
+        <tr>
+            <td>Incorporación</td>
+            <td>Proceso de inducción, entrega de recursos y bienvenida del nuevo empleado a la empresa.</td>
+        </tr>
+
+    </table>
+    <br>
+    
+    <footer class="footer">
+
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

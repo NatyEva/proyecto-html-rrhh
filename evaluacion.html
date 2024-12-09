@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagenes/globo.ico" type="image/x-icon">
+    <title>Mi primera pagina de Recursos Humanos</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ol li {
+            list-style-type: initial;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            float: none;
+            /* Quita cualquier estilo de flotación */
+            display: block;
+            /* Garantiza que se comporten como elementos de bloque */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+
+        li {
+            float: left;
+            display: block;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #768de9;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #8aa2ba;
+            color: white;
+        }
+
+        /* Contenedor general para la sección de evaluación */
+        form {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Encabezado del formulario */
+        form h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Descripción del formulario */
+        form p {
+            text-align: center;
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Lista ordenada para la escala de desempeño */
+        form ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form ol li {
+
+            margin-bottom: 5px;
+            font-size: 1rem;
+            float: none;
+            /* Quita cualquier estilo de flotación */
+            display: block;
+            /* Garantiza que se comporten como elementos de bloque */
+        }
+
+        /* Estilo para los campos de texto */
+        form label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        form input[type="number"] {
+            width: 100%;
+        }
+        /* Botón */
+        form button {
+            width: auto;
+            background-color: #709fd0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        form button:hover {
+            background-color: #003d80;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        Recursos Humanos
+    </h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="misionVisionValores.html">Mision, Vision y Valores</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a href="descripcion.html">Descripcion del puesto</a></li>
+                <li><a href="seleccion.html">Seleccion de personal</a></li>
+                <li><a class="active" href="evaluacion.html">Evaluacion de desempeño</a></li>
+                <li><a href="capacitacion.html">Planes de capacitacion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <article class="container">
+        <h3>Evaluacion de desempeño:</h3>
+        <img class="image2" src="assets/imagenes/evaluacion.jpg" alt="evalucion">
+        <p>La evaluación de desempeño por competencias es un proceso que mide el desempeño de un empleado en función de
+            las competencias específicas que son relevantes para su puesto de trabajo y para los objetivos
+            organizacionales.</p>
+        <img class="image" src="assets/imagenes/competencias.jpg" alt="competencias">
+        <p><b>¿Que son las competencias?</b><br>Son el conjunto de habilidades, conocimientos, actitudes y
+            comportamientos que una persona debe poseer y
+            aplicar para realizar su trabajo de manera efectiva. Las competencias pueden clasificarse en:</p>
+        <p><b>Técnicas o funcionales:</b> relacionadas con conocimientos específicos del puesto (ej. manejo de
+            herramientas, conocimiento técnico)</p>
+        <p><b>Blandas o transversales:</b> habilidades interpersonales o de carácter general (ej. trabajo en
+            equipo, liderazgo, comunicación).</p>
+        <p><b style="color: rgb(110, 20, 220);">Objetivos de la evalucion por competencias:</b></p>
+        <ol type="1">
+            <li>Identificar fortalezas y áreas de mejora del empleado.</li>
+            <li>Alinear el desempeño individual con los objetivos estratégicos de la organización.</li>
+            <li>Diseñar planes de capacitación o desarrollo profesional específicos.</li>
+            <li>Fomentar una cultura de mejora continua y alineación organizacional.</li>
+        </ol>
+
+    </article>
+    <h3 style="margin: 15px;">Ejemplo de evalucion por competencias:</h3>
+
+    <form>
+        <h2>Formulario de Evaluación de Desempeño</h2>
+        <p>Utiliza la sigueiente tabla para establecer un criterio de desempeño evaluando del 1 al 10 el cumplimiento
+            de cada trabajador</p>
+        <ol>
+            <li>1-Mal desempeño</li>
+            <li>2-Bajo desempeño</li>
+            <li>3-Desempeño aceptable</li>
+            <li>4-Buen desempeño</li>
+            <li>5-Mejor desempeño posible</li>
+        </ol>
+
+        <br>
+        <label for="nombreTrabajador">Nombre del trabajador(a):</label>
+        <input type="text">
+        <br>
+        <label for="area">Area a la que corresponde</label>
+        <input type="text">
+        <br>
+        <label for="cargo">Cargo oficial</label>
+        <input type="text">
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Conocimiento del proceso de compras</th>
+                    <th>Evaluacion individual</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>¿En que medida demuestra un conocimiento en los procesos?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿Como calificaria la eficiencia sobre la investigacion de mercado y la comprobacion de
+                        proveedores?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿El empleado demuestra habilidades para negociar terminos y condiciones favorables para la
+                        organizacion en transacciones comerciales?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td><b>Evaluacion total del proceso de Compras</b></td>
+                    <td><input type="number" ></td>
+
+                </tr>
+                <tr>
+                    <th>Habilidades de relacion y colaboracion</th>
+                    <th>Evaluacion individual</th>
+                </tr>
+                <tr>
+                    <td>¿En que medida colabora efectivamente con otros departamentos, como ventas, finanzas o
+                        produccion?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>Califique la capacidad para esstablecer y mantener relaciones sólidas con proveedores.</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿El empleado trabaja de manera efectiva en equipo y comparte conocimientos para mejorar los
+                        proceso de compras?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td><b>Evaluacion total sobre sus habilidades de relacion y colaboracion.</b></td>
+                    <td><input type="number" ></td>
+
+                </tr>
+
+                <tr>
+                    <th>Gestion del tiempo y priorizacion</th>
+                    <th>Evaluacion individual</th>
+                </tr>
+                <tr>
+                    <td>¿En que medida gestiona eficientemente su tiempo para cumplir con los plazos establecidos en los
+                        procesos de compras?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>Como calificaria la capacidad para priorizar tareas y proyectos, asegurando una distribucion
+                        adecuada de recursos y esfuerzos?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿Demuestra flexibilidad adaptabilidad para manejar cambios en las demandas y prioridades del
+                        departamento?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td><b>Evaluacion total sobre gestion del tiempo y priorizacion.</b></td>
+                    <td><input type="number" ></td>
+
+                </tr>
+
+                <tr>
+                    <th>Toma de desiciones y resolucion de problemas</th>
+                    <th>Evaluacion individual</th>
+                </tr>
+                <tr>
+                    <td>¿En que medida toma desiciones informadas y rapida durante el proceso de compras?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿Como evaluaria la capacidad de abordar y resolver problemas imprevistos o desafios en el
+                        proceso de compras de manera efectiva?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿Busca proactivamente oportunidades para mejorar la eficiencia y la efectividad en las
+                        operaciones de compras?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td><b>Evaluacion total sobre toma de desiciones y resolucion de problemas.</b></td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+
+                <tr>
+                    <th>Etica y cumplimiento normativo</th>
+                    <th>Evaluacion individual</th>
+                </tr>
+                <tr>
+                    <td>¿En que medida demuestra un comportamiento etico y profesional en sus interacciones con
+                        proveedores y colegas?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿Como calificaria la atencion a los procedimientos y regulaciones de compras, asegurando el
+                        complimiento normativo en todas las transacciones?</td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td>¿Promueve una cultura de etica y cumplimiento dentro del departamento de compras? </td>
+                    <td><input type="number" min="1" max="5"></td>
+
+                </tr>
+                <tr>
+                    <td><b>Evaluacion total sobre la etica y cumplimiento normativo.</b></td>
+                    <td><input type="number"></td>
+
+                </tr>
+
+            </tbody>
+            <tfooter>
+                <tr>
+                    <td style="background-color: rgb(4, 5, 8);"><b style="color:#f9f9f9;">Puntuacion de la evaluacion de desempeño</b></td>
+                    <td style="background-color: rgb(4, 5, 8);"><input></td>
+                </tr>
+            </tfooter>
+
+        </table>
+        <button type="submit">Enviar Evaluación</button>
+    </form>
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagenes/globo.ico" type="image/x-icon">
+    <title>Mi primera pagina de Recursos Humanos</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        ol li {
+            list-style-type: none;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            float: none;
+            /* Quita cualquier estilo de flotación */
+            display: block;
+            /* Garantiza que se comporten como elementos de bloque */
+        }
+
+        .active {
+            background-color: #768de9;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>
+        Recursos Humanos
+    </h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="misionVisionValores.html">Mision, Vision y Valores</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a href="descripcion.html">Descripcion del puesto</a></li>
+                <li><a href="seleccion.html">Seleccion de personal</a></li>
+                <li><a href="evaluacion.html">Evaluacion de desempeño</a></li>
+                <li><a class="active" href="capacitacion.html">Planes de capacitacion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <article class="container">
+        <img class="image" src="assets/imagenes/capacitacion.jpg" alt="capacitacion">
+        <p>Elaborar un plan de capacitación en recursos humanos implica un proceso estructurado que tiene como objetivo
+            desarrollar las competencias, habilidades y conocimientos de los empleados para mejorar su desempeño y
+            alinearlos con los objetivos estratégicos de la organización.</p>
+        <h3>Pasos esenciales para la creacion de un plan de capacitacion</h3>
+        <ol>
+            <li><b>1-Análisis de Necesidades:</b></li>
+            <p>Se requiere identificar las brechas entre las competencias actuales de los empleados y las requeridas
+                para sus funciones o futuros desafíos organizacionales. Es necesario revisar las evaluaciones de
+                desempeño previas y analizar los objetivos estratégicos de la organización para detectar habilidades
+                críticas necesarias.</p>
+
+            <li><b>2-Definición de Objetivos:</b></li>
+            <p>Establecer qué se espera lograr con la capacitación.
+                Los objetivos deben ser específicos, medibles, alcanzables, relevantes y con un tiempo definido (SMART).
+            </p>
+
+            <li><b>3-Diseño del Plan de Capacitación:</b></li>
+            <p>Planificar los contenidos, formatos y métodos de capacitación.Identificar las áreas clave (ej. liderazgo,
+                comunicación, manejo de herramientas específicas).</p>
+            <ol>
+                <li><i style="color: rgb(234, 13, 13);">Formato</i></li>
+                <li>Definir si la capacitación será:</li>
+                <ol>
+                    <li> Presencial.</li>
+                    <li> En línea (e-learning).</li>
+                    <li> Híbrida.</li>
+                </ol>
+                <li><i style="color: rgb(234, 13, 13);">Metodología</i></li>
+                <ol>
+                    <li>Talleres prácticos.</li>
+                    <li>Conferencias.</li>
+                    <li>Coaching o mentoring.</li>
+                    <li>Cursos en línea o plataformas interactivas.</li>
+
+                </ol>
+                <li><i style="color: rgb(234, 13, 13);">Duración y calendario</i></li>
+                <li>Establecer fechas, tiempos y frecuencia.</li>
+            </ol>
+            <br>
+            <li><b>4-Selección de Recursos:</b></li>
+            <p>Garantizar que los recursos sean suficientes y adecuados.</p>
+            <ol>
+                <li><i style="color: rgb(234, 13, 13);">Instructores:</i> Decidir si serán internos (empleados con
+                    experiencia) o externos (consultores o capacitadores).</li>
+                <li><i style="color: rgb(234, 13, 13);">Presupuesto:</i> Determinar los costos y asegurar que se
+                    ajuste a las capacidades de la empresa.</li>
+                <li><i style="color: rgb(234, 13, 13);">Materiales:</i> Incluir presentaciones, manuales, simuladores,
+                    software, etc</li>
+                <li><i style="color: rgb(234, 13, 13);">Lugar y tecnología:</i> Asegurar de contar con espacios físicos
+                    o plataformas virtuales adecuadas.
+                </li>
+            </ol>
+            <br>
+            <li><b>5-Implementación del Plan:</b></li>
+            <p>Comunicar a los empleados los objetivos, el calendario y los beneficios del programa.</p>
+
+            <li><b>6-Evaluación y Seguimiento:</b></li>
+            <p>Medir la efectividad del plan y su impacto en la organización.</p>
+            <ol>
+                <li style="color: rgb(234, 13, 13);">Métodos de evaluación:</li>
+                <ol>
+                    <li>Encuestas de satisfacción de los participantes.</li>
+                    <li>Evaluaciones antes y después de la capacitación (pre-test y post-test).</li>
+                    <li>Observación del cambio en el desempeño laboral.</li>
+                </ol>
+                <li style="color: rgb(234, 13, 13);">Indicadores clave (KPI):</li>
+                <ol>
+                    <li>Nivel de transferencia de conocimientos al puesto.</li>
+                    <li>Incremento en la productividad o calidad del trabajo.</li>
+                    <li>Reducción de errores o quejas.</li>
+                </ol>
+            </ol>
+            <br>
+            <li><b>7-Comunicación de Resultados:</b></li>
+            <p>Presentar un informe con datos como el porcentaje de empleados capacitados, logros obtenidos y beneficios
+                organizacionales. Ademas,agradecer y reconocer la participación de los empleados.
+            </p>
+
+        </ol>
+    
+    </article>
+
+    <h3 style="margin: 15px;">Formulario de Plan de Capacitación</h3>
+    <form>
+        <label for="necesidad">Necesidad identificada:</label>
+        <textarea id="necesidad" name="necesidad" rows="3" placeholder="Describe la necesidad identificada"
+            required></textarea>
+
+        <label for="objetivo">Objetivo:</label>
+        <input type="text" id="objetivo" name="objetivo" placeholder="Escribe el objetivo del plan"
+           required>
+
+        <label for="diseno">Diseño del plan:</label>
+        <textarea id="diseno" name="diseno" rows="3" placeholder="Describe cómo se diseñará el plan"
+            required></textarea>
+
+        <label for="recursos">Recursos necesarios:</label>
+        <textarea id="recursos" name="recursos" rows="3" placeholder="Especifica los recursos que se utilizarán"
+            required></textarea>
+
+        <label for="implementacion">Implementación:</label>
+        <textarea id="implementacion" name="implementacion" rows="3" placeholder="Describe cómo se implementará el plan"
+            required></textarea>
+
+        <label for="fecha">Fecha de inicio:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="duracion">Duración estimada:</label>
+        <input type="text" id="duracion" name="duracion" placeholder="Ejemplo: 2 sesiones de 3 horas" required>
+
+        <label for="responsable">Responsable del plan:</label>
+        <input type="text" id="responsable" name="responsable" placeholder="Nombre del responsable" required>
+
+        <button type="submit">Guardar Plan</button>
+    </form>
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

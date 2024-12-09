@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagenes/globo.ico" type="image/x-icon">
+    <title>Mi primera pagina de Recursos Humanos</title>
+
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #768de9;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>
+        Recursos Humanos
+    </h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="misionVisionValores.html">Mision, Vision y Valores</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a href="descripcion.html">Descripcion del puesto</a></li>
+                <li><a href="seleccion.html">Seleccion de personal</a></li>
+                <li><a href="evaluacion.html">Evaluacion de desempeño</a></li>
+                <li><a href="capacitacion.html">Planes de capacitacion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <h2 style="margin: 15px;">
+        Los tres pilares
+    </h2>
+    <hr>
+    <article class="container">
+        <h3>Mision:</h3>
+        <img class="image" src="assets/imagenes/images.jpg" alt="misionvisionvalores">
+        <p>La misión organizacional es una declaración clara y concisa que define el propósito fundamental de una
+            organización. Responde a la pregunta: "¿Por qué existimos?". Es el pilar central que guía las actividades,
+            decisiones y estrategias de la empresa, enfocándose en el valor que aporta a sus clientes, empleados,
+            accionistas y la sociedad en general.</p>
+        <h3>Vision:</h3>
+        <img class="image2" src="assets/imagenes/descarga.jpg" alt="misionvisionvalores">
+        <p>La visión organizacional es una declaración que describe el estado futuro deseado de una organización.
+            Responde a la pregunta: "¿Hacia dónde queremos llegar?". Es una proyección inspiradora que guía las metas
+            estratégicas y el crecimiento a largo plazo, motivando a los empleados y comunicando la ambición de la
+            empresa a sus grupos de interés.</p>
+        <h3>Valores:</h3>
+        <img class="image" src="assets/imagenes/mvv.jpg" alt="misionvisionvalores">
+        <p>Los valores organizacionales son los principios fundamentales que guían el comportamiento, las decisiones y
+            la cultura de una empresa u organización. Representan las creencias éticas y morales que definen cómo se
+            relaciona con sus empleados, clientes, proveedores y la sociedad.
+
+        </p>
+    </article>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagenes/globo.ico" type="image/x-icon">
+    <title>Mi primera pagina de Recursos Humanos</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #768de9;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <h1>
+        Recursos Humanos
+    </h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="misionVisionValores.html">Mision, Vision y Valores</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a class="active" href="descripcion.html">Descripcion del puesto</a></li>
+                <li><a href="seleccion.html">Seleccion de personal</a></li>
+                <li><a href="evaluacion.html">Evaluacion de desempeño</a></li>
+                <li><a href="capacitacion.html">Planes de capacitacion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h3 style="margin: 15px;">Descripción del Puesto</h3>
+        <hr>
+        <article class="container">
+            <img class="image" src="assets/imagenes/descripcion.jpg" alt="descripcionPuesto">
+            <p>La descripción del puesto de trabajo es un documento que detalla las responsabilidades, tareas,
+                competencias, y requisitos asociados a un cargo dentro de una organización. Su propósito principal es
+                proporcionar claridad tanto a los empleados como a la empresa sobre lo que se espera de una persona en
+                un puesto específico, lo que facilita una gestión eficiente del talento humano.</p>
+        </article>
+        <br>
+    <form>
+        
+        <label for="titulo">Título del puesto</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ejemplo: Líder de Equipo" required>
+
+        <label for="equipo">Equipo</label>
+        <input type="text" id="equipo" name="equipo" placeholder="Ejemplo: Centro de Contacto, Sucursal CDMX" required>
+
+        <label for="reporta-a">Reporta a</label>
+        <input type="text" id="reporta-a" name="reporta-a" placeholder="Ejemplo: Gerente de Servicio al Cliente"
+            required>
+
+        <label for="reportes-directos">Reportes directos</label>
+        <input type="text" id="reportes-directos" name="reportes-directos"
+            placeholder="Ejemplo: Equipo de Operadores de Contacto">
+
+        <label for="relaciones-clave">Relaciones clave</label>
+        <textarea id="relaciones-clave" name="relaciones-clave" rows="4"
+            placeholder="Ejemplo: Internas - Gerente de Marketing, Externas - Clientes"></textarea>
+
+        <label for="proposito">Propósito del puesto</label>
+        <textarea id="proposito" name="proposito" rows="4" placeholder="Describe brevemente el propósito del puesto"
+            required></textarea>
+
+        <label for="responsabilidades">Responsabilidades clave</label>
+        <textarea id="responsabilidades" name="responsabilidades" rows="6"
+            placeholder="Enumera las responsabilidades principales" required></textarea>
+
+        <label for="resultados">Resultados esperados</label>
+        <textarea id="resultados" name="resultados" rows="4"
+            placeholder="Ejemplo: Cumplimiento de metas del equipo, mejora continua"></textarea>
+
+        <label for="habilidades">Habilidades requeridas</label>
+        <textarea id="habilidades" name="habilidades" rows="4"
+            placeholder="Ejemplo: Liderazgo, Gestión de Equipos, Comunicación"></textarea>
+
+        <label for="otros">Otros detalles</label>
+        <textarea id="otros" name="otros" rows="4" placeholder="Cualquier otra información relevante"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+
+</html>
